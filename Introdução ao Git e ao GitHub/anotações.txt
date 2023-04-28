@@ -1,0 +1,36 @@
+Comando para um bom desempenho no terminal.
+
+Dir = exibe uma lista de diretórios / pastas.
+
+cd / = abre a pasta "disco local C" ou uma pasta em específico se digitado o nome da pasta depois do comando.
+
+cd .. = volta para o disco local C.
+
+cls = limpa o terminal 
+
+mkdir "nome da pasta = cria uma pasta com  o nome especificado após o comando "MKDIR".
+
+tab = auto completa o nome da pasta ou arquivo.
+
+Seta para cima = navega entre os comando recentes usados.
+
+del = deleta arquivos dentro da pasta
+
+rmdir "nome da pasta" = deletar
+
+
+ANOTAÇÕES AULA SOBRE GIT:
+
+SHA1 =  Secure Hash Algothm ( algoritmo de hash seguro), é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de segurança nacional dos EUA) 
+
+ele embaralha os dados do arquivo gerando conjunto único de carácteres de 40 dígitos, independente das alterações realizadas no arquivo, sempre que o arquivo é alterado o código muda.
+
+GITHUB: 
+
+CHAVES SSH = é uma forma de estabeler uma ligação segura entre duas maquinas (existem chaves públicas e chaves rivadas) o que faz com que o Github reconheça a maquina que está fazendo alterações no diretório
+
+
+git init = cria um repositório dentro a pasta
+
+
+ANOTAÇÕES DO PROJETO DE GIT E GITHUB
