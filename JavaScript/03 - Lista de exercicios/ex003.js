@@ -13,21 +13,34 @@ Código |     Forma de Pagamento    |       Condição de pagamento       |
 
 */
 
+function aplicarDesconto(valor, desconto) {
+  return (valor - (valor * (desconto / 100)));
+}
+
+function aplicarJuros(valor, juros) {
+  return (valor + (valor * (juros / 100)));
+}
+
 const preçoEtiqueta = 100;
-const formaPagamento = 2;
+const formaPagamento = 4;
 
 if (formaPagamento === 1) {
-  console.log(preçoEtiqueta - preçoEtiqueta * 0.1);
+  console.log(aplicarDesconto (preçoEtiqueta, 10));
 } else if (formaPagamento === 2) {
-  console.log(preçoEtiqueta - (preçoEtiqueta * 0.15));
+  console.log(aplicarDesconto (preçoEtiqueta, 15));
 } else if (formaPagamento === 3) {
   console.log(preçoEtiqueta);
 } else {
-  console.log(preçoEtiqueta + preçoEtiqueta * 0.1);
+  console.log(aplicarJuros(preçoEtiqueta, 10));
 }
 
-let nomeDoAluno = "Alef";
 
-console.log(nomeDoAluno)
-nomeDoAluno = 'Leeh';
-console.log(nomeDoAluno)
+
+aplicarDesconto()
+aplicarJuros()
+
+function calcular(n1, n2){
+  const media = (n1 + n2) /2;
+}
+
+console.log(calcular(5,5));
