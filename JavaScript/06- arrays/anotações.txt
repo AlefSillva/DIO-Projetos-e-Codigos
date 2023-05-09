@@ -1,0 +1,25 @@
+ARRAYS
+
+as arrays são usadas com "[]" com strings dentro
+
+a opção pop() = retira o último item da lista
+já o "shift()" = remove o primwieo item da lista
+
+Length = mostra o tamanho da lista.
+
+ESTRUTURAS DE REPETIÇÃO:
+
+FOR= percorre uma quantidade específica de vezes o laço.
+a primeira parte é a declaração da variável de controle, o ponto de partida do laço de repetição (index);
+
+segunda parte - é um teste de condição, por exemplo: "i < 10;"
+
+terceira parte - caso "i" seja menor que "10" ele executa a terceira adicionando "1" unidade (i++)
+
+obs: String é um "array" de caracteres;
+
+APRENDENDO SOBRE DEPURAÇÃO (teste):
+
+o VSCode tem uma opção de depuração de javascript integrada que ao passar o mouse ao lado do numero das linhas de código ele sinaliza um ponto vermelho (Ponto de interrupção / breakpoint) o que nos permite testar linha a linha do código, parando de executar onde o "ponto vermelho" estiver marcado.
+
+
