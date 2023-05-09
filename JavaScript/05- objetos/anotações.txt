@@ -1,0 +1,14 @@
+Objetos e classes
+
+
+objetos é uma estrutura dinâmica de "chave/valor".
+
+é possivel usar funções dentro dos objetos, é o que chamamos de MÉTODO, e usar a palavra reservada "this" o que faz ter acesso a todo o objeto.
+
+CLASSES:
+ classe é uma definição do que deveria ser, e uma INSTANCIA é uma ocorrencia de uma pessoa.
+
+Obs: classes sempre começam com letras maiúsculas.
+
+constructor - é o que acontece quando uma pessoa é instanciada.
+e nele podemos receber parâmetros (informações).
