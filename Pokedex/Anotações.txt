@@ -1,0 +1,69 @@
+
+
+
+API = é um tipo de "servidor de informações"
+
+protocolo HTTP:
+é um protocolo cliente/servidor (interação entre ambos)
+
+uma URL é composta de: IP / Path = caminha de identificação do recurso
+
+REQUEST METHOD:
+existem vários tipos de solicitação, requerindo algo do servidor, que pode ser: GET | POST | PUT | DELETE | PATCH
+
+a requisição é feita em cima de um endereço/IP e o que queremos fazer acerca desse recurso é dito pelo método de requerição (get, post, put, delete, patch)
+
+para que uma requisição seja feita e alguma tarefa seja realizada temos de fornecer dados ao servidor para que ele entenda o que estamos querendo.
+
+ex: ao querer inserir algo novo (PUT) precisamos especificar o arquivo
+
+primeira área de transferência de dados é o PATH (identificação do recurso)
+
+Segunda área "query string": ela começa após o "?" no endereço e tudo que vem depois é a query string (que é sempre chave/valor) que são argumentos de busca
+
+ex: para selecionar pokemons do tipo grama, tem de ser coloca "type=grass" após a "?" 
+
+Caso queira adicionar mais alguma informação para a busca pode-se usar "&" para concatenar a info. EX: "type=grass&name=i"
+
+REQUEST HEADERS E RESPONSE HEADERS: 
+São uma espécie de configuração da api  
+(request headers
+	content-type = application/json)
+
+BODY e STATUS CODE:
+corpo da requisição o dado que se deseja trafegar.
+
+obs: GET não tem "Body" na requisição
+
+Obs: uma requisição tem: URL | REQUEST METHOD | REQUEST HEADERS | REQUEST BODY
+
+já uma resposta do servidor tem: STATUS CODE | RESPONSE HEADERS | RESPONSE BODY
+
+
+* STATUS CODE = o que acontece com a requisição (um numero que volta como resposta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
