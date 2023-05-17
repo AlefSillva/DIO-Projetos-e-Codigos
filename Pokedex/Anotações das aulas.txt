@@ -43,10 +43,10 @@ já uma resposta do servidor tem: STATUS CODE | RESPONSE HEADERS | RESPONSE BODY
 * STATUS CODE = o que acontece com a requisição (um numero que volta como resposta)
 
 
+JOIN() : junta todos os elementos e converter em uma string com o separador que for colocado dentro do "()".
 
 
-
-
+PROMISSE.ALL(): recebe uma lista de requisições e transforma em uma nova.
 
 
 
