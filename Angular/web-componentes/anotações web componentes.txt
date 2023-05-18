@@ -1,0 +1,16 @@
+
+
+
+ANOTAÇÕES ANGULAR:
+
+DOM = document object model:
+Funciona como um sistema de árvore, onde o arquivo HTML escrito por mim passa por um processo chamado PARSED, para que então seja renderizado, o DOM quebra o documento em partes(parsed) sendo o primeiro elemento (container) um ele PAI, e seguintes sendo FILHOS do elemento PAI, todo documento que estiver abaixo de outro é seu FILHO e consequentemente o de cima é seu PAI
+
+SHADOW DOM (Árvore fantasma):
+criar uma estrutura de árvore(DOM) para ser usada dentro da DOM do navegador, uma árvore dentro da árvore, onde temos total controle. É criada dentro de um dos elementos da árvore DOM do browser, encapsulando o código. Anexamos ela através de um CUSTOM ELEMENT (criando uma TAG html para chamar essa arvore fantasma)
+
+- VANTAGENS: é possível isolar e trabalhar todas as complexidades de um elemento/coponente de forma isolada, tornando o código mais CLEAN (mostrando menos coisas).
+
+
+
+
