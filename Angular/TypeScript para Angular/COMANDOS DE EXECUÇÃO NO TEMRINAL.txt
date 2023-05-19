@@ -1,0 +1,9 @@
+
+
+npm run start 
+
+ lê o arquivo typeScript porém cria um "build" em JS para ser executado. (dá erro muitas vezes pois ambos os arquivos possuem os mesmo dados)
+
+npm runs start:dev 
+
+ cria um servidor local que se atualiza automáticamente e exibe o resultado do código a cada modificação. Não cria um "build" (melhor uso)
