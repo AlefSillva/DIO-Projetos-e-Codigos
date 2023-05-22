@@ -1,0 +1,123 @@
+ANGULAR 
+
+- é um framework baseado em JS
+
+- Usa TypeScript como linguagem principal
+
+- SPAs são seu foco: _aplicações baseadas em componentes_
+
+simple pages aplication = só exibe uma unica pagina com tds os componentes de sua categoria, ex: na pagina de login só serão mostrados componentes do login.
+
+
+- Componentes são a base da arquitetura
+
+- Estrutura Organizada e bem deifinida: ele diz como devemos estruturar as pastas do projeto
+
+- Sistema de Tooling muito rico: CLI, HTTP, Router:
+possui várias ferramentas dentro de si mesmo.
+
+-----------------------------------------------
+ANGULAS JS & ANGULAR: 
+
+são diferentes o Angular JS veio primeiro, (O "JS" veio depois que lançaram o ANGULAR novo, daí o antigo ganhou o "js") - foca em javascript puro
+
+a partir da versão 2.0 já começou a usar TypeScript, possui ferramentas diferentes e é mais moderno (ANGULAR).
+
+-----------------------------------------------
+FOI CRIADO POR: Google
+
+definido como Framework
+
+trabalha com HTML + TS nos templates.
+
+2 Way - Binding - ássa de pai para filho e vice-versa (caminhos): 
+
+-----------------------------------------------
+CAMADAS DE WEB APP:
+
+- componentes: são blocos de códigos reaproveitáveis
+
+- gerenciamento de estado: 
+
+- roteamento: qual o conjunto de componentes devem ser mostrados ao acessar uma determinada rota ou url
+
+- renderização: como os elementos são mostrados na tela
+
+-----------------------------------------------
+
+COMPONENTES:
+É um elemento visual, cusotmizável e reutilizável
+
+ex: um card na tela, botão
+
+trabalhamos com partes isoladas de cada parte da página e reaproveitar o componentes de códigos p/ criar outros elementos semelhantes mudando somentes as info sem mexer na estrutura. (html e CSS isolados para cada elemento)
+
+-----------------------------------------------
+GERENCIAMENTO DE ESTADOS / STATES:
+
+STATES: Responsável por garantir que as informações dos componentes não estão dessincronizadas e facilitar a comunicação de um componente com outro.
+
+ex: Atualizar carrinho de compras ao clicar no botão de comprar de um produto.
+
+-----------------------------------------------
+ROTEAMENTO:
+
+Routes ou Routing & Navigation: Responsável pela forma de navegar fazendo a troca de URL sem Recarregar a página, mudando somente os componentes que são mostrados.
+
+ex:
+meuapp/login - mostra os componentes da página de login
+meuapp/home - mostra os componentes da página home
+
+sem que a página seja atualizada, só mudando os componentes porém tudo na mesma página.
+
+EXEMPLOS DE BIBLIOTECAS:
+- History API:
+nativo do navegador
+
+- React-Router:
+uma biblioteca instalada a parte para React
+
+- Vue-Router
+uma biblioteca instalada a parte para Vue
+
+- Angular RoutingModule
+uma biblioteca do ANGULAR
+
+-----------------------------------------------
+RENDERIZAÇÃO / RENDER:
+
+Responsável por decidir a melhor maneira de acessar e entregar para o browser o componente pronto para que ele seja desenhado na tela sem complicações.
+
+de acordo com a rota acessada - os componentes que devem ser mostrados na tela para essa rota - e o estado = renderização para o navegador
+
+TIPOS DE RENDERIZAÇÃO:
+
+Existem 3 tipos principais de estratégias de renderização 
+
+- 100% server:
+aplicação normal, entregando um documento HTML fixo e pronto de acordo com a rota acessada (já monstado no back-end) - carrega mais rápido as informações.
+
+- Parte server e Parte Client:
+algumas coisas são entregues pelo servidos e outras coisas montadas pelo lado do cliente
+
+- 100% Client
+o servidor não acessa nada tudo é montado do lado do cliente.
+- desvantagens: não tem SEO pois é montado somente quando a pessoa acessa.
+
+obs: ANGULAR trabalha por default em 100% client.
+
+-----------------------------------------------
+obs: modulo do angular é um agrupador.
+
+
+
+
+
+
+
+
+
+
+
+
+
