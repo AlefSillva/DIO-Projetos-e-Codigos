@@ -52,6 +52,24 @@ ex: um card na tela, botão
 
 trabalhamos com partes isoladas de cada parte da página e reaproveitar o componentes de códigos p/ criar outros elementos semelhantes mudando somentes as info sem mexer na estrutura. (html e CSS isolados para cada elemento)
 
+
+COMO MINHA APLICAÇÃO É MONTADA ?:
+- através de "injeção de dependências" (não é um conceito totalmente ligado a componentes) 
+
+- "Injeção de dependência" é um padrão de desenvolvimento utilizada em diversos cenários diferentes, é uma estratégia de desenvolvimento muito utilizada.
+
+EX: é como se fosse um anticorpo injetado em nosso corpo para determinada doença (problema) - aplicação montada com injeções de soluções externas.
+_________________________________________________
+
+OBS: Componentes lógicos nao possuem VISUAL.
+
+_________________________________________________
+APP-ROOT:
+
+recebe os componentes que são criados de maneira isolada e injeta no HTML
+
+
+
 -----------------------------------------------
 GERENCIAMENTO DE ESTADOS / STATES:
 
@@ -109,15 +127,135 @@ obs: ANGULAR trabalha por default em 100% client.
 -----------------------------------------------
 obs: modulo do angular é um agrupador.
 
+_________________________________________________
+INTERPOLAÇÃO DE DADOS:
+transmitir dados p/ o HTML 
 
+CLASSE É A PARTE INTELIGENTE DO COMPONENTE, ONDE DEFINIMOS PROPRIEDADES DENTRO DELA.
 
+EX:
 
+export class Button {
+    buttonText: String = 'ACESSAR';
+}
 
+para acessar essa propriedade definida no código acima, lá no documento HTML usamos "{{nomedapropriedade}}" no caso o nome da PROP seria "buttonText" ficaria assim:
 
+<div>
+    <button>{{buttonText}}</button>
+</div>
 
+_________________________________________
 
+Podemos definir uma propriedade para a classe exportada com um vetor(array) dentro dela:
 
+ex:
 
+export class NomeDaClasse {
+buttonTexts: string[] = ['Carro', 'Moto'];
+}
+
+assim quando fosse usá-lo no HTML, poderia chamar um indice específico de um elemento dentro da lista, como por exemplo:
+
+<button>{{buttonTexts[1}}</button> // nesse caso o item na primeira posição (carro) seria exibido como texto do botão.
+
+__________________________________________________
+Também é possível acessar objetos diretamente usando ".nomeDoObjeto":
+
+export class NomeDaClasse {
+buttonObject= {
+    label: 'adicionar ao carrinho', // isso nomeará o botão com "adicionar o carrinho"
+  }
+}
+
+e como o HTML é capaz de enxergar essas propriedades definidas ao chamarmos:
+
+<button>{{buttonObject.label}</button>
+
+O NOME DO BOTÃO MUDARIA PARA O DEFINIDO NA PROPRIEDADE DA CLASSE.
+
+ESSE É CONCEITO DE INTERPOLAÇÃO DE DADOS, JOGAR CONCEITOS DA CLASSE PARA O HTML
+______________________________________________________
+
+ESTILIZAÇÃO:
+
+DIFERENÇA ENTRE ESTILO GLOBAL & SCOPED:
+
+O arquivo "STYLES.CSS" representa a estilização global do projeto, já o "SCOPED" só estiliza o componente especifico dele.
+
+o Angular sempre dará preferencia ao SCOPED.
+
+______________________________________________________
+COMUNICAÇÃO DE COMPONENTE PAI P/ FILHO:
+
+<my-button label='{{buttonLabel}}'></my-button>
+ // component Pai usando label='{{nomeDoAtributo}}'
+_________________________
+<my-button [label]="buttonSecond"></my-button>
+ // component filho usando o mesmo atributo "label" usando "[]" e aspas "Valor(nomeDoAtributo)"
+__________________________
+Já nesse caso, quando definimos o atributo sem "{{}}" o angular entende que é uma string e não uma variável, funcionando normalmente e sem ligação(conversar) com o component pai:
+
+<my-button label='Notícia'></my-button>
+
+______________________________________________________
+4 MANEIRAS DE PASSAR VALORES PARA COMPONENTES:
+
+Como no exemplo no tópico anterior:
+ - label(sem colchetes) = "{{}}" tem o mesmo efeito que [label]="valor(nomeDoAtributo)"
+
+ - label(sem colchetes) = "nomeDaPropriedade" tem o mesmo efeito que   [label]='valor(nomeDoAtributo)'	c/ aspas simples dentro de aspas duplas.
+
+______________________________________________________
+
+DATA BINGIND:
+
+Podemos dizer que databinding é a comunicação entre a view e a lógica(js), quando atualizamos a lógica ela reflete na view.
+
+Comparação de propriedades e atributos
+Embora você possa definir tecnicamente a [attr.disabled]associação de atributo, os valores são diferentes, pois a associação de propriedade deve ser um valor booleano, enquanto a associação de atributo correspondente depende de o valor ser nullou não. Considere o seguinte:
+  
+  content_copy
+  <input [disabled]="condition ? true : false">
+  <input [attr.disabled]="condition ? 'disabled' : null">
+
+______________________________________________________
+
+<-- PARTES DO DATA BINDING: assiciação de dados -->
+
+comunicação que vem da parte lógica(TypeScript) para o HTML:
+
+  "HTML <------------------------ TypeScript"  
+
+  - Interpolação: {{valor}} 
+
+  - Property Binding: [propriedade]="valor"
+_____________________________
+
+comunicação que vem da parte visual(HTML) para o TypeScript:
+
+  "HTML ------------------------> TypeScript"
+
+- Event Binding: (evento) = "Handler"
+
+_____________________________
+
+comunicação de ambos os lados:
+	------------------------>
+  "HTML <------------------------ TYPESCRIPT"
+
+- Two Way Data Binding: [(ngModel)] = "propriedade"
+
+______________________________________________________
+ USANDO AS 3 COISAS:
+
+EX:
+
+  <input type="text" 
+  [value]="placeholder" // property biding
+  (input)="placeholder = $any($event.target).value" // event biding
+  />
+  <p>{{placeholder}}</p> // Interpolação
 
 
 
