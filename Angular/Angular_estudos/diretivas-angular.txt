@@ -1,0 +1,35 @@
+DIRETIVAS:
+é a maneira como o angular manipula e altera o DOM dinâmicamente, através de comandos.
+
+diretivas de atributo - alteram um comportamento de um elemento específico, de um componente ou até mesmo de outra diretiva.
+
+EX: 
+ngClass: remove ou adiciona um css de um elemento- exemplo mudar o tema de um site dependendo como o usuário escolhe, ex: light ou dark
+
+ngStyle: adiciona ou remove um conjunto de estilos ao HTML
+
+ngModel = adiciona vinculação de daos bi-direcionais a um elemento de um formulário
+
+______________________________________________________
+DIRETIVAS ESTRUTURAIS 
+alteram ou remodelam a estrutuda do DOM.
+
+NgIf - condicional que verifica se o modelo deve ser visualizado ou não
+
+NgFor : repete um elemento para cada item em uma lista 
+
+NgSwuitch: utilizado para alternar entre comportamentos alternativos
+
+______________________________________________________
+
+PODEMOS USAR O "*ngIf" com um bloco (secreto) usando um "<ng-template #nomeQualquer></ng-template>"
+
+por exemplo:
+
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card> 
+// add o nome do ng-template
+
+<ng-template #anotherBlock>
+  <p>Olá sou um bloco secreto</p>
+</ng-template>
+

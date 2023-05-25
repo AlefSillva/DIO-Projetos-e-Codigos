@@ -1,0 +1,9 @@
+ng new [nome] - cria um novo projeto
+
+ng serve [projeto] - biulding do projeto - criar um server
+
+ng doc <keyword> - abre o angula.io na documentação procurando a palavra especificada
+
+ng generate - modifica arquivos na temática cria arquivos específicos
+
+code . - abre uma nova janela do vscode editando somente o projeto atual s/ as demais pastas anteriores

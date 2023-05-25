@@ -1,0 +1,28 @@
+LIFE-CYCLE:
+
+OnInit - é uma interface, e toda interface é acompanhada de um "implements OnInit"
+
+1. ngOnInit() - nascimento do componente. Dentro dele podemos colocar tudo que iniciará junto com o componente assim que ele for inicado.
+___________________________________________
+2. ngOnChanges() - inicia sempre que acontece alguma alteração no componente
+___________________________________________
+3. ngDoCheck() - inicia toda vez que algum componente é verificado.
+
+  // Executa quando o Angular realiza qualquer projeção de conteúdo em seus componentes
+  3.1 - ngAfterContentInit() - 
+               ___________________________________________
+  // Executa sempre que o conteúdo do conteúdo do componente é verificado pelo mecanismo de detecção de alteração do Angular.
+  3.2 - ngAfterContentChecked()
+               ___________________________________________
+  // Executa depois que um componente é totalmente inicializado (carregou tudo)
+  3.3 - ngAfterViewInit()
+               ___________________________________________
+  // Execcuta quando a visualização de um componente é verificada pelo algoritmo de detecção de alterações do Angular.
+  3.4 - ngAfterViewChecked()
+___________________________________________
+4. ngOnDestroy() - inicia toda vez que o componente é destruído.
+
+ao todo o componente Angular passa por 8 estágios-ciclos de vida.
+
+________________________________________________________________
+
