@@ -9,6 +9,7 @@ export class CompAtributosComponent {
   estilo:string = 'enable'
   corFundo:string ='red'
   corFonte:string = 'white'
+  item:string = ''
 
   trocar() {
     if(this.estilo == 'disable') {
