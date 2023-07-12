@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CompAtributosComponent {
   estilo:string = 'enable'
-  corFundo:string ='red'
+  corFundo:string ='blue'
   corFonte:string = 'white'
   item:string = ''
+  lista:string[] = []
+  isEnableBlock:boolean = false
+
+
+  adicionarLista(){
+    this.lista.push(this.item)
+  }
 
   trocar() {
     if(this.estilo == 'disable') {
